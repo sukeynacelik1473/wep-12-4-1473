@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>CSS Çalışması</title>
+    <style>
+        li{
+            background-color: rgb(241, 164, 203);
+            color: rgb(0, 0, 0);
+            margin: 5px 10px; /*dış boşluk vermek için */
+            padding:  5px;
+        }
+        h1{
+            background-color: rgb(243, 121, 182);
+            color: rgb(0, 0, 0);
+            margin: 10px 20px ; /*dış boşluk vermek için */
+            padding: 10px 20px ;/*içboşluk*/
+
+        }
+        .yesil{
+            background-color: rgb(243, 208, 241);
+            color: rgb(116, 113, 113);
+
+        }
+        .kirmizi{
+            background-color: rgb(252, 165, 165);
+            color: rgb(107, 104, 104);
+
+        }
+        #sebze{
+            border: double rgb(15, 15, 13);
+            padding:  20px 15px;
+            background-color: rgb(240, 201, 230);
+        }
+        #meyve{
+            border: double rgb(15, 15, 13);
+            padding:  20px 15px;
+            background-color: rgb(218, 169, 215);
+        }
+        ul
+        {
+            padding:  30px ;
+        }
+    </style>
+        <!-- Bu bölümde 3 seçici açıklancaktır -->
+
+        <!-- https://flatuicolors.com -->
+        <!-- etiket seçici  li etiketleri -> 
+         font-weigth bold, 
+         background-color #0984e3 
+         padding:10px;  sonra detaylı işlenecek
+         margin:5px;  sonra detaylı işlenecek
+        -->
+
+        <!-- siz yapın: h1 etiketinin arkaplan rengini #6c5ce7 yapın iç boşluğu 20px yapın-->
+
+        <!-- class(sınıf) seçici   classı yesil olanların arkaplan rengini yeşil yazı rengini beyaz-->
+        <!--  sıra sizde classı kirmizi olanların yazı rengini beyaz arkaplan rengini #ff7675 yapın. -->
+
+        <!-- id seçici sebze olan listeye border ekle 
+         border kuralı (stil renk kalınlık) arkaplanı da #b2bec3 yapma
+         border: solid #2d3436 5px;
+         -->
+        <!-- sıra sizde
+         meyve olanın arkaplan #fab1a0 çerçeve #d63031 olsun. 
+        -->
+
+        <!-- Dikkat ederseniz. Sayfanın sol ve üst köşesinde boşluk var. Sebebi ne olabilir. Araştırabilir misiniz.
+         Ve sorunu nasıl düzeltiriz. İlk bulana çikolata -->
+
+        <!-- dahili stil kullanımı -->
+</head>
+<body>
+    
+    <h1>Sebzeler</h1>
+    <ul id="sebze">
+        <li class="yesil">Ispanak</li>
+        <li>Domates</li>
+        <li class="yesil">Marul</li>
+        <li>Patlıcan</li>
+        <li class="yesil">Brokoli</li>
+        <li>Biber</li>
+        <li class="yesil">Kabak</li>
+        <li>Soğan</li>
+        <li>Havuç</li>
+    </ul>
+
+    <h1>Meyveler</h1>
+    <ul id="meyve">
+        <li class="kirmizi">Elma</li>
+        <li class="kirmizi">Çilek</li>
+        <li>Muz</li>
+        <li>Portakal</li>
+        <li class="kirmizi">Kiraz</li>
+        <li>Armut</li>
+        <li>Kivi</li>
+        <li class="kirmizi">Nar</li>
+        <li>Üzüm</li>
+    </ul>
+
+</body>
+</html>
